@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lịch Dạy Học Tình Nguyện</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,420;9..144,520;9..144,600;9..144,680&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://unpkg.com/parse/dist/parse.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <div class="gate"><div class="gate-box"><div class="gate-mark"></div><div style="color:var(--ink-soft);font-size:13.5px;">Đang tải…</div></div></div>
+</div>
+<div class="toast-wrap" id="toastWrap"></div>
+
+<script src="js/core/01-constants.js"></script>
+<script src="js/core/02-state.js"></script>
+<script src="js/core/03-toast.js"></script>
+<script src="js/core/04-backend-parse.js"></script>
+<script src="js/core/05-auth.js"></script>
+<script src="js/core/06-data-helpers.js"></script>
+<script src="js/core/07-csv-download.js"></script>
+<script src="js/core/08-render-shell.js"></script>
+<!-- Các trang (mỗi trang 1 file — sửa trang nào thì chỉ cần mở đúng file đó) -->
+<script src="js/pages/dashboard.js"></script>
+<script src="js/pages/announcements.js"></script>
+<script src="js/pages/my-schedule.js"></script>
+<script src="js/pages/grid-view.js"></script>
+<script src="js/pages/availability.js"></script>
+<script src="js/pages/attendance.js"></script>
+<script src="js/pages/swap.js"></script>
+<script src="js/pages/materials.js"></script>
+<script src="js/pages/achievements.js"></script>
+<script src="js/pages/utilities.js"></script>
+<script src="js/pages/feedback.js"></script>
+<script src="js/pages/classes.js"></script>
+<script src="js/pages/students.js"></script>
+<script src="js/pages/auto-schedule.js"></script>
+<script src="js/pages/reports.js"></script>
+<script src="js/pages/people.js"></script>
+<script src="js/pages/audit-log.js"></script>
+<script src="js/pages/profile-360.js"></script>
+<script src="js/pages/my-students.js"></script>
+<!-- Bộ gắn sự kiện tổng (gọi các hàm bind của từng trang) -->
+<script src="js/core/09-events-core.js"></script>
+<!-- Khởi động ứng dụng — luôn để cuối cùng -->
+<script src="js/core/10-bootstrap.js"></script>
+</body>
+</html>
